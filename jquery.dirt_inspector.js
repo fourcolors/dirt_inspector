@@ -12,7 +12,7 @@ if (typeof jQuery == 'undefined') throw("jQuery could not be found.");
       ignore_dirty: ":submit",
       before_unload_message: "Are you sure you want to switch windows without saving (Unsaved data will be lost!)",
       bind_before_unload: function( object ){
-        object.bind("beforeunload", function(){
+        object.on("beforeunload", function(){
           // Check if you are clicking a submit button
           return params.before_unload_message;
         });
