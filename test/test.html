@@ -28,6 +28,9 @@
                   dragend: function(marker){
                     $('#map_canvas').data("lng", marker.getPosition().lng());
                     $('#map_canvas').data("lat", marker.getPosition().lat());
+
+                    // Just change the div when drag ends. 
+                    $( this ).change();
                   }
                 }
               }
