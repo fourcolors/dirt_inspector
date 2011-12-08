@@ -10,7 +10,7 @@ if (typeof jQuery == 'undefined') throw("jQuery could not be found.");
     // Defaults to be used when extending this jQuery object.
     var defaults = {
       ignore_dirty: ":submit",
-      before_unload_message: "Are you sure you want to switch windows without saving (Unsaved data will be lost!)",
+      before_unload_message: "You are leaving without saving. Any unsaved data will be lost!",
       bind_before_unload: function( object ){
         object.on("beforeunload", function(){
           // Check if you are clicking a submit button
